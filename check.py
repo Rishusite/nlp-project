@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 import warnings
 warnings.filterwarnings('ignore')
 df = pd.read_csv('train.csv')
-new_df = df.sample(3000,random_state=2)
+new_df = df.sample(30000,random_state=2)
 new_df.head()
 
 def preprocess(q):
